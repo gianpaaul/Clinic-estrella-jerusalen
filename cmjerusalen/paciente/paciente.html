@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CM Jerusalén - Clínica Médica</title>
+    <link rel="stylesheet" href="../paciente/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="contact-info">
+        <span><i class="fas fa-envelope"></i> contacto@cmjerusalen.com.pe</span>
+        <span><i class="fas fa-phone"></i> 053-495346</span>
+        <span><i class="fas fa-mobile-alt"></i> 953978797</span>
+      </div>
+      <div class="cerrar-sesion">
+        <a href="../login.php">
+          <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+        </a>
+      </div>
+    </div>
+    <nav>
+      <div class="logo">
+        <img src="../IMAJENES/FONDO DE CLINICA.jpg" alt="Logo CM Jerusalén" />
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="../paciente/paciente.html">QUIENES SOMOS</a></li>
+        <li><a href="../servicios/servicios.php">SERVICIOS</a></li>
+        <li><a href="#especialidades">ESPECIALIDADES</a></li>
+        <li><a href="../contactenos/contactenos.html">CONTACTENOS</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>¡Tu Salud es Nuestra Prioridad!</h1>
+      <p>Cuidamos de ti con la más alta tecnología médica y un equipo comprometido con tu bienestar. Conócenos y descubre cómo podemos ayudarte.</p>
+      <a href="paciente.html#mensaje" class="btn">Conoce Más</a>
+    </div>
+  </section>
+
+  <section class="mensaje" id="mensaje">
+    <h2>PRESENTACION</h2>
+    <div class="presentacion">
+        <p>
+          Durante más de 13 años, hemos brindado un servicio de salud ocupacional único, que ha transformado la vida de miles de personas y empresas, tanto a nivel nacional como internacional. Nos especializamos en ofrecer soluciones integrales, asegurando la mejora continua de la salud y el bienestar de nuestros pacientes. ¡Confía en nosotros, porque tu salud es nuestra misión!
+        </p>
+    </div>
+  </section>
+
+  <section class="especialidades" id="especialidades">
+    <h2>Nuestra Misión y Visión</h2>
+    <div class="mision-vision-contenido">
+      <div class="mision">
+        <h3>Misión</h3>
+        <p>
+          Brindamos atención médica de calidad, con un enfoque humano y profesional. Utilizamos la más avanzada tecnología médica, siempre con el compromiso de velar por la salud y el bienestar de nuestra comunidad.
+        </p>
+      </div>
+      <div class="vision">
+        <h3>Visión</h3>
+        <p>
+          Ser reconocidos como la clínica de referencia en la región, destacando por nuestra excelencia, innovación y el compromiso inquebrantable con la salud de nuestros pacientes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="especialidades">
+    <h2>Especialidades Médicas a tu Alcance</h2>
+    <div class="especialidades-grid">
+      <a href="../info/CARDIOLOGIA.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Cardiología</h3>
+        </div>
+      </a>
+
+      <a href="../info/TRAUMATOLOGIA.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Traumatología</h3>
+        </div>
+      </a>
+
+      <a href="../info/PSICOLOGIA.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Psicología</h3>
+        </div>
+      </a>
+
+      <a href="../info/PEDIATRIA.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Pediatría</h3>
+        </div>
+      </a>
+
+      <a href="../info/NUTRICION.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Nutrición</h3>
+        </div>
+      </a>
+
+      <a href="../info/MEDICINA_INTERNA.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Medicina Interna</h3>
+        </div>
+      </a>
+
+      <a href="../info/MEDICINA_GENERAL.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Medicina General</h3>
+        </div>
+      </a>
+
+      <a href="../info/MEDICINA_FISICA.HTML" class="especialidad-link">
+        <div class="especialidad-card">
+          <h3>Medicina Física</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="valores-section" id="valoresSection">
+    <h2>NUESTROS VALORES</h2>
+    <div class="valores-container">
+      <button class="valor-button" onclick="cambiarColor('#FF6F61', '#ffffff')">
+        <i class="fas fa-star"></i>
+        <p>CALIDAD</p>
+      </button>
+      <button class="valor-button" onclick="cambiarColor('#6C63FF', '#ffffff')">
+        <i class="fas fa-handshake"></i>
+        <p>COMPROMISO</p>
+      </button>
+      <button class="valor-button" onclick="cambiarColor('#20B2AA', '#000000')">
+        <i class="fas fa-circle-check"></i>
+        <p>INTEGRIDAD</p>
+      </button>
+      <button class="valor-button" onclick="cambiarColor('#FFD700', '#333333')">
+        <i class="fas fa-people-carry"></i>
+        <p>TRABAJO EN EQUIPO</p>
+      </button>
+      <button class="valor-button" onclick="cambiarColor('#FF1493', '#ffffff')">
+        <i class="fas fa-heart"></i>
+        <p>PASIÓN</p>
+      </button>
+    </div>
+  </section>
+
+  <script>
+    function cambiarColor(fondo, texto) {
+      const section = document.getElementById('valoresSection');
+      section.style.background = fondo;
+      section.style.color = texto;
+
+      const botones = section.querySelectorAll('.valor-button');
+      botones.forEach(btn => {
+        btn.style.color = texto;
+      });
+    }
+  </script>
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+
+    window.addEventListener("scroll", () => {
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll("nav ul li a");
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 70;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(`#${current}`)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

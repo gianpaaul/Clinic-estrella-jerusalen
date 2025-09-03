@@ -1,0 +1,337 @@
+.contacto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #f9fcff, #f0f8ff);
+    position: relative;
+}
+
+.contacto-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0,119,182,0.05) 0%, rgba(0,119,182,0) 70%);
+    z-index: 0;
+}
+
+.contacto-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    padding: 20px 0 25px;
+}
+
+.contacto-header h1 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.contacto-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: #e6f2fa;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.contacto-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, #0077b6, #00a8e8);
+    border-radius: 2px;
+}
+
+.contacto-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.contacto-form, .info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.contacto-form {
+    border: 1px solid rgba(0, 119, 182, 0.1);
+}
+
+.contacto-form:hover {
+    box-shadow: 0 8px 30px rgba(0, 119, 182, 0.12);
+}
+
+.contacto-form h2, .contacto-info h2, .mapa-container h2 {
+    color: #0077b6;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto-form h2 i, .contacto-info h2 i, .info-card h3 i {
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #0077b6;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-enviar:hover {
+    background-color: #005f92;
+}
+
+.btn-enviar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn-enviar:hover::before {
+    left: 100%;
+}
+
+/* Información de contacto */
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    border-top: 3px solid transparent;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-top-color: #0077b6;
+    box-shadow: 0 10px 25px rgba(0, 119, 182, 0.1);
+}
+
+.info-card h3 {
+    color: #0077b6;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.mapa-container {
+    margin-top: 40px;
+}
+
+.mapa {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 40px 0 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #cce7ff;
+}
+
+.footer-section p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f92;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contacto-form, .contacto-info {
+        padding: 20px;
+    }
+
+    .contacto-header h1 {
+        font-size: 2rem;
+    }
+
+    .contacto-header p {
+        font-size: 1rem;
+    }
+
+    .contacto-form h2, .contacto-info h2, .mapa-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        font-size: 0.95rem;
+    }
+
+    .btn-enviar {
+        font-size: 0.95rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .contacto-header p {
+        font-size: 0.95rem;
+    }
+
+    .btn-enviar {
+        font-size: 0.9rem;
+    }
+}
