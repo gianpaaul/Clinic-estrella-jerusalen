@@ -1,7 +1,5 @@
 # Clinic Estrella de Jerusalén
 
-![Clinic Logo](cmjerusalen/IMAJENES/FONDO DE CLINICA.jpg)
-
 A comprehensive web system developed using HTML5, CSS3, JavaScript, PHP, and MySQL, designed to optimize the medical and administrative management of the Centro Médico Estrella de Jerusalén. The platform centralizes patient care, consultations, and resource management, ensuring efficiency, scalability, and security.
 
 ---
