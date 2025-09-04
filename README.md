@@ -109,3 +109,7 @@ Contributions are welcome! Here's how you can contribute:
 
 ## Contact  
 GitHub: [https://github.com/gianpaaul](https://github.com/gianpaaul)
+
+---
+## License
+This project is protected under GR copyrights. Modifications are allowed exclusively for improvement purposes under the terms described in the license file. See LICENSE for more details.
